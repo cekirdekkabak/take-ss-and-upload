@@ -7,7 +7,12 @@ import os
 # pip install Pillow --upgrade
 # pip install base64
 
-os.environ['DISPLAY'] = ':0'
+
+## IF YOU GET ERROR START PROGRAM WITH DISPLAY=:0
+## sample
+## DISPLAY=:0 python main.py
+
+#os.environ['DISPLAY'] = ':0'
 
 if str(sys.argv[-1]) == "capture":
     pyautogui.screenshot('capture.png')
