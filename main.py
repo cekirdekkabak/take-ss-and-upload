@@ -12,7 +12,9 @@ import os
 ## sample
 ## DISPLAY=:0 python main.py
 
-#os.environ['DISPLAY'] = ':0'
+os.environ['DISPLAY'] = ':0'
+pyautogui.moveTo(100, 200)
+pyautogui.moveTo(200, 300)
 
 if str(sys.argv[-1]) == "capture":
     pyautogui.screenshot('capture.png')
