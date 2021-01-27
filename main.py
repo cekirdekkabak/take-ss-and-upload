@@ -7,6 +7,8 @@ import os
 # pip install Pillow --upgrade
 # pip install base64
 
+os.environ['DISPLAY'] = ':0'
+
 if str(sys.argv[-1]) == "capture":
     pyautogui.screenshot('capture.png')
     time.sleep(2)
