@@ -7,8 +7,8 @@ import os
 # pip install base64
 # pip install PyVirtualDisplay
 
-os.environ['DISPLAY'] = ':0.0'
-os.environ['XAUTHORITY']='/run/user/1000/gdm/Xauthority'
+#os.environ['DISPLAY'] = ':0.0'
+#os.environ['XAUTHORITY']='/run/user/1000/gdm/Xauthority'
 
 import pyautogui
 
