@@ -1,4 +1,4 @@
-import pyautogui
+
 import sys
 import requests
 import time
@@ -12,7 +12,12 @@ import os
 ## sample
 ## DISPLAY=:0 python main.py
 
-os.environ['DISPLAY'] = ':0'
+os.environ['DISPLAY'] = ':0.0'
+import pyautogui
+from pyvirtualdisplay import Display
+
+display = Display(visible=True, size=(1400,1080))
+
 pyautogui.moveTo(100, 200)
 pyautogui.moveTo(200, 300)
 
